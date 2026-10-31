@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>KIRUPASANAM PRAYER CAMP 2026</title>
-    <!--
-      GitHub Pages serves THIS file for any address that is not a real file
-      (for example /register, /my-card, /check-in or /admin when opened directly or refreshed).
-      It does not load the website bundle. It only sends the visitor to index.html and passes the
-      requested path along; index.html then restores the clean address and the app opens the right page.
-      Because it never mentions a hashed asset file, it can never go out of date after a new build.
-    -->
+    <meta name="description" content="Join the KIRUPASANAM PRAYER CAMP from 6–8 November 2026 at Hotel Alexan Arnala, Vasai." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="KIRUPASANAM PRAYER CAMP 2026" />
+    <meta property="og:description" content="A place to pause. A reason to gather. Join us 6–8 November 2026 at Hotel Alexan Arnala, Vasai." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KIRUPASANAM PRAYER CAMP 2026" />
+    <meta name="twitter:description" content="A place to pause. A reason to gather. Join us 6–8 November 2026 at Hotel Alexan Arnala, Vasai." />
     <script>
-      // The website lives in a repository sub-folder, so keep the first path segment.
-      var pathSegmentsToKeep = 1;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // Restores the real address after public/404.html redirected here (see that file).
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) { return s.replace(/~and~/g, '&'); }).join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      }(window.location));
     </script>
+    <link rel="icon" type="image/svg+xml" href="/Prayer-Champ-2026-Website/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/Prayer-Champ-2026-Website/assets/index-Bu2I_0hZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/Prayer-Champ-2026-Website/assets/index-8u1xHBgV.css">
   </head>
   <body>
-    <noscript>Please turn on JavaScript to open the Prayer Champ 2026 website.</noscript>
+    <div id="root"></div>
   </body>
 </html>
